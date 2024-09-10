@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-s"></i> 
+                    <div class="logo-text">SALEEM.</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                       
+                    </div>
+                 
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="pic1.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>M.Sohaib Saleem</h1>
+                    <p> I am a Computer Systems Engineering student at NED University with a solid foundation in HTML, CSS, JavaScript, and Python, alongside practical experience in using libraries like NumPy and Pandas. I have developed a fraud email detection model using Streamlit and have hands-on experience in WordPress development. My focus is on creating efficient and user-friendly solutions through both frontend development and data-driven projects
+                    </p>
+
+                    <div class="btn-group">
+                       <a href="https://drive.google.com/file/d/1HrWE10OK6kJz6nOl0CIFJe10rU2fKC6c/view?usp=sharing" class="btn active"> Resume</a>
+                       <a href="tel:+923362836894" class="btn">Contact</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=100010968420611"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammadsohaibsaleem/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Saleem-144?tab=repositories"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/923368236894" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+                        
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Frontend Developer","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
